@@ -17,4 +17,9 @@ Puedes editar el archivo usando el **Bloc de Notas** desde la terminal:
 
 ```powershell
 notepad C:\ProgramData\ssh\sshd_config
+
+Parámetro,Valor,Explicación
+Port,2222,Cambiamos el puerto por defecto.
+MaxAuthTries,3,Evitar fuerza bruta.
+PasswordAuthentication,yes,(Opcional) Cambiar a 'no' si usas claves.
 ```
