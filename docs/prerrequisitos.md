@@ -45,7 +45,7 @@ Python 3.12.1
 ```
 
 ??? question "¿No funciona el comando?"
-**Si ves un error como `python: command not found`, significa que Python no está en el PATH. Puedes:**
+Si ves un error como `python: command not found`, significa que Python no está en el PATH. Puedes:
 
     1. Reinstalar Python marcando la casilla "Add to PATH"
     2. O añadir Python manualmente a las variables de entorno del sistema
