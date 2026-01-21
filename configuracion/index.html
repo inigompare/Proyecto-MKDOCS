@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#configuracion-en-windows" class="md-skip">
+          Saltar a contenido
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -314,6 +319,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuración
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -331,6 +356,47 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-ubicacion-del-archivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Ubicación del archivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-edicion-de-parametros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Edición de Parámetros
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -380,6 +446,38 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-ubicacion-del-archivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Ubicación del archivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-edicion-de-parametros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Edición de Parámetros
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -399,9 +497,20 @@
   
 
 
-  <h1>Configuración</h1>
-
-
+<h1 id="configuracion-en-windows">Configuración en Windows<a class="headerlink" href="#configuracion-en-windows" title="Permanent link">&para;</a></h1>
+<p>El archivo de configuración de SSH en Windows <strong>no</strong> está en <code>/etc/ssh</code>, sino en una carpeta oculta llamada <code>ProgramData</code>.</p>
+<h2 id="1-ubicacion-del-archivo">1. Ubicación del archivo<a class="headerlink" href="#1-ubicacion-del-archivo" title="Permanent link">&para;</a></h2>
+<p>La ruta absoluta es:
+<code>C:\ProgramData\ssh\sshd_config</code></p>
+<div class="admonition warning">
+<p class="admonition-title">Copia de Seguridad</p>
+</div>
+<p>Antes de editar, haz un backup con este comando:
+<code>Copy-Item C:\ProgramData\ssh\sshd_config C:\ProgramData\ssh\sshd_config.bak</code></p>
+<h2 id="2-edicion-de-parametros">2. Edición de Parámetros<a class="headerlink" href="#2-edicion-de-parametros" title="Permanent link">&para;</a></h2>
+<p>Puedes editar el archivo usando el <strong>Bloc de Notas</strong> desde la terminal:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">notepad</span> <span class="n">C</span><span class="p">:\</span><span class="n">ProgramData</span><span class="p">\</span><span class="n">ssh</span><span class="p">\</span><span class="n">sshd_config</span>
+</code></pre></div>
 
 
 
@@ -451,7 +560,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>

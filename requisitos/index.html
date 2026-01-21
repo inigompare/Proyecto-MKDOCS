@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#requisitos-previos" class="md-skip">
+          Saltar a contenido
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -287,6 +292,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Requisitos Previos
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -304,6 +329,58 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-sistema-operativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Sistema Operativo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-privilegios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Privilegios
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-instalacion-del-servicio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Instalación del Servicio
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -380,6 +457,49 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-sistema-operativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Sistema Operativo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-privilegios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Privilegios
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-instalacion-del-servicio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Instalación del Servicio
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -399,9 +519,17 @@
   
 
 
-  <h1>Requisitos Previos</h1>
-
-
+<h1 id="requisitos-previos">Requisitos Previos<a class="headerlink" href="#requisitos-previos" title="Permanent link">&para;</a></h1>
+<p>Para desplegar este servicio necesitas cumplir los siguientes requisitos.</p>
+<h2 id="1-sistema-operativo">1. Sistema Operativo<a class="headerlink" href="#1-sistema-operativo" title="Permanent link">&para;</a></h2>
+<p>Debes tener Windows 10 (versión 1809 o superior) o Windows Server 2019/2022.</p>
+<h2 id="2-privilegios">2. Privilegios<a class="headerlink" href="#2-privilegios" title="Permanent link">&para;</a></h2>
+<p>Es obligatorio ejecutar la terminal como <strong>Administrador</strong>.</p>
+<p><img alt="Captura de PowerShell" src="../img/powershell.png" /></p>
+<h2 id="3-instalacion-del-servicio">3. Instalación del Servicio<a class="headerlink" href="#3-instalacion-del-servicio" title="Permanent link">&para;</a></h2>
+<p>Ejecuta este comando en PowerShell para comprobar si ya lo tienes instalado:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Get-WindowsCapability</span> <span class="n">-Online</span> <span class="p">|</span> <span class="nb">Where-Object</span> <span class="n">Name</span> <span class="o">-like</span> <span class="s1">&#39;OpenSSH.Server*&#39;</span>
+</code></pre></div>
 
 
 
@@ -451,7 +579,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
