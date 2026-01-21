@@ -1,10 +1,3 @@
----
-
-### 4. Archivo `docs/configuracion.md`
-
-_(Este archivo cambia totalmente: ahora usa rutas y comandos de Windows)_
-
-````markdown
 # Configuración en Windows
 
 El archivo de configuración de SSH en Windows **no** está en `/etc/ssh`, sino en una carpeta oculta llamada `ProgramData`.
@@ -25,4 +18,3 @@ Puedes editar el archivo usando el **Bloc de Notas** desde la terminal:
 ```powershell
 notepad C:\ProgramData\ssh\sshd_config
 ```
-````
