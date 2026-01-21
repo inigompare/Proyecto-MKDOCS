@@ -13,7 +13,8 @@ Esta es la sección más importante de la documentación. Aquí documento **los 
 Al intentar instalar paquetes con `pip` o ejecutar ciertos comandos de administración, PowerShell mostraba el siguiente error:
 
 !!! failure "Error: La operación solicitada requiere elevación"
-```
+
+````
 ERROR: Could not install packages due to an OSError: [WinError 5]
 Acceso denegado: 'C:\\Program Files\\Python312\\Lib\\site-packages\\...'
 
@@ -69,7 +70,7 @@ Este error ocurre porque Windows protege las carpetas del sistema (como `C:\Prog
     ```
 
 ??? tip "Consejo para VS Code"
-Si usas VS Code, puedes configurar el terminal integrado para que abra PowerShell con permisos de administrador por defecto. Sin embargo, esto no es recomendable por seguridad. Es mejor abrir una terminal externa cuando necesites permisos elevados.
+    Si usas VS Code, puedes configurar el terminal integrado para que abra PowerShell con permisos de administrador por defecto. Sin embargo, esto no es recomendable por seguridad. Es mejor abrir una terminal externa cuando necesites permisos elevados.
 
 ---
 
@@ -80,12 +81,13 @@ Si usas VS Code, puedes configurar el terminal integrado para que abra PowerShel
 Al ejecutar `mkdocs serve`, el sistema mostraba un error de parsing en el archivo de configuración:
 
 !!! failure "Error: YAML Syntax Error"
-`     ERROR   -  Config file 'mkdocs.yml' could not be loaded:
+    ```
+    ERROR   -  Config file 'mkdocs.yml' could not be loaded:
                while parsing a block mapping
                expected <block end>, but found '<scalar>'
                in "mkdocs.yml", line 35, column 1
                could not find expected ':'
-    `
+    ```
 
 ### Análisis del Problema
 
@@ -104,7 +106,7 @@ ssh-keygen -t rsa -b 4096
 nav:
 - Inicio: index.md
    - Página 2: pagina2.md  # Indentación incorrecta
-```
+````
 
 ### Solución
 

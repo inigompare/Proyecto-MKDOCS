@@ -1,5 +1,5 @@
 # Configuración del sitio MkDocs
-site_name: Meta-Documentación MkDocs
+site_name: Documentación MkDocs
 site_description: Guía paso a paso para crear, configurar y desplegar un sitio MkDocs en GitHub Pages
 site_author: Estudiante ASIR
 site_url: https://tu-usuario.github.io/Proyecto-MKDOCS/
