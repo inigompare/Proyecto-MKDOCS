@@ -1,9 +1,6 @@
 site_name: Proyecto MKDOCS
 site_author: Iñigo Duran Sanz
-# URL donde se verá la web publicada (GitHub Pages)
 site_url: https://inigompare.github.io/Proyecto-MKDOCS/
-
-# Enlace al código fuente (Hará que salga el icono de GitHub arriba a la derecha)
 repo_url: https://github.com/inigompare/Proyecto-MKDOCS
 
 # 1. Configuración del Tema
@@ -13,14 +10,18 @@ theme:
   palette:
     primary: deep purple
     accent: teal
+  features:
+    - content.code.copy
 
 # 2. Extensiones
 markdown_extensions:
-  - admonition # Para notas de advertencia/info
-  - pymdownx.details # Para los bloques desplegables (Requisito)
-  - pymdownx.superfences # Para bloques de código avanzados
-  - pymdownx.highlight: # Para colorear el código
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
       anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - toc:
       permalink: true
 
@@ -31,7 +32,3 @@ nav:
   - Requisitos Previos: requisitos.md
   - Configuración: configuracion.md
   - Conclusiones: conclusiones.md
-
-Port 2222
-PermitRootLogin no
-MaxAuthTries 3
