@@ -12,12 +12,7 @@ Este proyecto ha sido un ejercicio práctico completo que abarca múltiples comp
 
 La documentación técnica no es un "extra", es una parte fundamental del trabajo de un administrador de sistemas. Los beneficios son claros:
 
-!!! quote "La documentación es un regalo que te haces a ti mismo del futuro"
-
-    - **Reproducibilidad**: Poder repetir un proceso meses después
-    - **Colaboración**: Permitir que otros entiendan y mejoren tu trabajo
-    - **Debugging**: Recordar qué hiciste y por qué lo hiciste
-    - **Profesionalismo**: Demostrar un trabajo riguroso y ordenado
+!!! quote "La documentación es un regalo que te haces a ti mismo del futuro" - **Reproducibilidad**: Poder repetir un proceso meses después - **Colaboración**: Permitir que otros entiendan y mejoren tu trabajo - **Debugging**: Recordar qué hiciste y por qué lo hiciste - **Profesionalismo**: Demostrar un trabajo riguroso y ordenado
 
 ### Documentación como Código
 
@@ -59,8 +54,7 @@ El mismo principio se aplica a la infraestructura. En lugar de configurar servid
 ### Limitaciones de GitHub Pages
 
 !!! warning "No todo es perfecto"
-
-    GitHub Pages tiene algunas limitaciones a tener en cuenta:
+GitHub Pages tiene algunas limitaciones a tener en cuenta:
 
     - **Solo sitios estáticos**: No soporta PHP, Python backend, bases de datos...
     - **Límite de tamaño**: Máximo 1GB por repositorio
@@ -122,8 +116,7 @@ Durante este proyecto he practicado las siguientes competencias del ciclo ASIR:
 ### Tutoriales Recomendados
 
 ??? info "Recursos Adicionales"
-
-    **Videos:**
+**Videos:**
 
     - [MkDocs Tutorial - TechWorld with Nana](https://www.youtube.com/watch?v=Q-YA_dA8C20)
     - [Git and GitHub for Beginners - freeCodeCamp](https://www.youtube.com/watch?v=RGOj5yH7evk)
@@ -143,8 +136,7 @@ Durante este proyecto he practicado las siguientes competencias del ciclo ASIR:
 ## 🏁 Cierre
 
 !!! success "Proyecto Completado"
-
-    Este sitio web es la prueba tangible de todo lo aprendido. Desde la instalación inicial de Python hasta el despliegue final en GitHub Pages, cada paso ha sido documentado para servir como referencia futura.
+Este sitio web es la prueba tangible de todo lo aprendido. Desde la instalación inicial de Python hasta el despliegue final en GitHub Pages, cada paso ha sido documentado para servir como referencia futura.
 
     El ciclo ASIR nos prepara para gestionar infraestructuras complejas, y proyectos como este demuestran que incluso las herramientas "simples" como un generador de sitios estáticos pueden enseñarnos mucho sobre buenas prácticas, resolución de problemas y profesionalismo.
 

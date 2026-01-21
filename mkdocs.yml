@@ -1,12 +1,12 @@
 # Configuración del sitio MkDocs
 site_name: Documentación MkDocs
 site_description: Guía paso a paso para crear, configurar y desplegar un sitio MkDocs en GitHub Pages
-site_author: Estudiante ASIR
-site_url: https://tu-usuario.github.io/Proyecto-MKDOCS/
+site_author: Iñigo Durán Sanz
+site_url: https://inigompare.github.io/Proyecto-MKDOCS/
 
 # Repositorio
 repo_name: Proyecto-MKDOCS
-repo_url: https://github.com/tu-usuario/Proyecto-MKDOCS
+repo_url: https://github.com/inigompare/Proyecto-MKDOCS
 
 # Tema Material
 theme:

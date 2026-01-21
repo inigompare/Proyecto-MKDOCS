@@ -53,22 +53,22 @@ site_author: Estudiante ASIR
 # TEMA Y APARIENCIA
 # ============================================
 theme:
-  name: material # Nombre del tema
-  language: es # Idioma de la interfaz
+  name: material
+  language: es
   palette:
-    primary: indigo # Color principal
-    accent: indigo # Color de acento
+    primary: indigo
+    accent: indigo
 
 # ============================================
 # EXTENSIONES DE MARKDOWN
 # ============================================
 markdown_extensions:
-  - admonition # Alertas de colores
-  - pymdownx.details # Bloques desplegables
-  - pymdownx.superfences # Bloques de código avanzados
-  - pymdownx.tabbed: # Pestañas
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
       alternate_style: true
-  - pymdownx.highlight: # Resaltado de sintaxis
+  - pymdownx.highlight:
       anchor_linenums: true
 
 # ============================================
@@ -237,7 +237,7 @@ New-Item -Path .\docs\nueva-pagina.md -ItemType File
 ```yaml title="mkdocs.yml"
 nav:
   - Inicio: index.md
-  - Nueva Página: nueva-pagina.md # Añadir aquí
+  - Nueva Página: nueva-pagina.md
 ```
 
 ---

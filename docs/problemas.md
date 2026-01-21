@@ -13,10 +13,9 @@ Esta es la sección más importante de la documentación. Aquí documento **los 
 Al intentar instalar paquetes con `pip` o ejecutar ciertos comandos de administración, PowerShell mostraba el siguiente error:
 
 !!! failure "Error: La operación solicitada requiere elevación"
-
-````
+```
 ERROR: Could not install packages due to an OSError: [WinError 5]
-Acceso denegado: 'C:\\Program Files\\Python312\\Lib\\site-packages\\...'
+Acceso denegado: 'C:\Program Files\Python312\Lib\site-packages\...'
 
     Consider using the `--user` option or check the permissions.
     ```
@@ -34,8 +33,7 @@ Este error ocurre porque Windows protege las carpetas del sistema (como `C:\Prog
 ### Solución
 
 !!! success "Solución: Ejecutar PowerShell como Administrador"
-
-    **Opción A: Abrir terminal con permisos elevados**
+**Opción A: Abrir terminal con permisos elevados**
 
     1. Busca "PowerShell" en el menú de inicio
     2. Haz clic derecho → **Ejecutar como administrador**
@@ -70,7 +68,7 @@ Este error ocurre porque Windows protege las carpetas del sistema (como `C:\Prog
     ```
 
 ??? tip "Consejo para VS Code"
-    Si usas VS Code, puedes configurar el terminal integrado para que abra PowerShell con permisos de administrador por defecto. Sin embargo, esto no es recomendable por seguridad. Es mejor abrir una terminal externa cuando necesites permisos elevados.
+Si usas VS Code, puedes configurar el terminal integrado para que abra PowerShell con permisos de administrador por defecto. Sin embargo, esto no es recomendable por seguridad. Es mejor abrir una terminal externa cuando necesites permisos elevados.
 
 ---
 
@@ -81,13 +79,12 @@ Este error ocurre porque Windows protege las carpetas del sistema (como `C:\Prog
 Al ejecutar `mkdocs serve`, el sistema mostraba un error de parsing en el archivo de configuración:
 
 !!! failure "Error: YAML Syntax Error"
-    ```
-    ERROR   -  Config file 'mkdocs.yml' could not be loaded:
+`     ERROR   -  Config file 'mkdocs.yml' could not be loaded:
                while parsing a block mapping
                expected <block end>, but found '<scalar>'
                in "mkdocs.yml", line 35, column 1
                could not find expected ':'
-    ```
+    `
 
 ### Análisis del Problema
 
@@ -106,13 +103,12 @@ ssh-keygen -t rsa -b 4096
 nav:
 - Inicio: index.md
    - Página 2: pagina2.md  # Indentación incorrecta
-````
+```
 
 ### Solución
 
 !!! success "Solución: Limpiar y Formatear Correctamente"
-
-    El archivo YAML debe contener **solo configuración**, no comandos. Además, la indentación debe ser consistente.
+El archivo YAML debe contener **solo configuración**, no comandos. Además, la indentación debe ser consistente.
 
     ```yaml title="✅ mkdocs.yml (CORRECTO)"
     site_name: Mi Proyecto
@@ -131,8 +127,8 @@ nav:
 
 | Regla                                            | Ejemplo Correcto               | Ejemplo Incorrecto               |
 | ------------------------------------------------ | ------------------------------ | -------------------------------- |
-| Usar espacios, no tabs                           | `··name: valor`                | `→ name: valor`                  |
-| Indentación de 2 espacios                        | `theme:`<br>`··name: material` | `theme:`<br>`····name: material` |
+| Usar espacios, no tabs                           | `  name: valor`                | `→ name: valor`                  |
+| Indentación de 2 espacios                        | `theme:`<br>`  name: material` | `theme:`<br>`    name: material` |
 | Listas con guión y espacio                       | `- item`                       | `-item`                          |
 | Strings con caracteres especiales entre comillas | `title: "Hola: Mundo"`         | `title: Hola: Mundo`             |
 
@@ -185,7 +181,7 @@ Al acceder a `https://tu-usuario.github.io/Proyecto-MKDOCS/` aparecía:
 
     - Haz un hard refresh: `Ctrl + Shift + R`
     - O abre en una ventana de incógnito
-    - Espera 2-3 minutos (GitHub Pages puede tardar en propager)
+    - Espera 2-3 minutos (GitHub Pages puede tardar en propagar)
 
 === "Causa 3: Despliegue No Completado"
 
@@ -246,20 +242,18 @@ El problema era la falta de conocimiento sobre las capacidades de **Material for
 ### Solución
 
 !!! success "Aprender la Sintaxis Extendida de Markdown"
-
-    Material for MkDocs extiende Markdown con muchas funcionalidades extra. La clave está en:
+Material for MkDocs extiende Markdown con muchas funcionalidades extra. La clave está en:
 
     1. **Leer la documentación oficial**: [squidfunk.github.io/mkdocs-material](https://squidfunk.github.io/mkdocs-material/)
     2. **Activar las extensiones** en `mkdocs.yml`
     3. **Practicar** con cada tipo de elemento
 
 ??? example "Cheatsheet de Sintaxis"
-
-    **Alertas:**
-    ```markdown
+**Alertas:**
+`markdown
     !!! note "Título"
         Contenido
-    ```
+    `
 
     **Código con título:**
     ```markdown
