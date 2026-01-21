@@ -1,17 +1,16 @@
-# Welcome to MkDocs
+# OpenSSH en Windows
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Bienvenido a la documentación técnica del proyecto para el módulo de **Servicios de Red e Internet (SRI)**.
 
-## Commands
+## 🎯 Objetivo
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Documentar la instalación y aseguramiento (hardening) del servidor **OpenSSH** nativo en entornos Microsoft Windows.
 
-## Project layout
+## 🛠️ Entorno de Trabajo
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- **Sistema Operativo:** Windows 10 / 11 / Server 2019+
+- **Consola:** PowerShell (Administrador)
+- **Servicio:** OpenSSH Server
+- **Documentación:** MkDocs
+
+> "Windows y Linux cada vez están más cerca gracias a herramientas como OpenSSH."

@@ -31,3 +31,7 @@ nav:
   - Requisitos Previos: requisitos.md
   - Configuración: configuracion.md
   - Conclusiones: conclusiones.md
+
+Port 2222
+PermitRootLogin no
+MaxAuthTries 3
