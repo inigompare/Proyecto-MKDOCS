@@ -49,7 +49,8 @@ Proyecto-MKDOCS/
 ## 🚀 ¿Por dónde empezar?
 
 ??? tip "Recomendación de lectura"
-Si es tu primera vez configurando MkDocs, te recomiendo seguir las secciones en orden:
+
+    Si es tu primera vez configurando MkDocs, te recomiendo seguir las secciones en orden:
 
     1. **Preparación del Entorno** - Instala las herramientas necesarias
     2. **Configuración del Proyecto** - Entiende la estructura de archivos
