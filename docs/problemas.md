@@ -13,7 +13,8 @@ Esta es la sección más importante de la documentación. Aquí documento **los 
 Al intentar instalar paquetes con `pip` o ejecutar ciertos comandos de administración, PowerShell mostraba el siguiente error:
 
 !!! failure "Error: La operación solicitada requiere elevación"
-```
+
+````
 ERROR: Could not install packages due to an OSError: [WinError 5]
 Acceso denegado: 'C:\Program Files\Python312\Lib\site-packages\...'
 
@@ -103,7 +104,7 @@ ssh-keygen -t rsa -b 4096
 nav:
 - Inicio: index.md
    - Página 2: pagina2.md  # Indentación incorrecta
-```
+````
 
 ### Solución
 
@@ -133,7 +134,8 @@ El archivo YAML debe contener **solo configuración**, no comandos. Además, la 
 | Strings con caracteres especiales entre comillas | `title: "Hola: Mundo"`         | `title: Hola: Mundo`             |
 
 ??? warning "Cómo Detectar Tabuladores Invisibles"
-En VS Code, puedes visualizar los caracteres invisibles:
+
+    En VS Code, puedes visualizar los caracteres invisibles:
 
     1. Abre la paleta de comandos (`Ctrl + Shift + P`)
     2. Busca "Toggle Render Whitespace"
@@ -249,33 +251,34 @@ Material for MkDocs extiende Markdown con muchas funcionalidades extra. La clave
     3. **Practicar** con cada tipo de elemento
 
 ??? example "Cheatsheet de Sintaxis"
-**Alertas:**
-`markdown
-    !!! note "Título"
+
+    **Alertas:**
+        `markdown
+        !!! note "Título"
         Contenido
     `
 
     **Código con título:**
-    ```markdown
-    ```python title="ejemplo.py"
-    print("Hola Mundo")
-    ```
-    ```
+        ```markdown
+        ```python title="ejemplo.py"
+        print("Hola Mundo")
+        ```
+        ```
 
     **Pestañas:**
-    ```markdown
-    === "Pestaña 1"
+        ```markdown
+        === "Pestaña 1"
         Contenido 1
 
-    === "Pestaña 2"
-        Contenido 2
-    ```
+        === "Pestaña 2"
+            Contenido 2
+        ```
 
     **Desplegable:**
-    ```markdown
-    ??? tip "Click para ver más"
-        Contenido oculto
-    ```
+        ```markdown
+        ??? tip "Click para ver más"
+            Contenido oculto
+        ```
 
 ---
 
